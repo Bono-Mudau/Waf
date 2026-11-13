@@ -1,0 +1,27 @@
+.rule-name {
+  min-width: 130px;
+}
+.rule-name strong {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.rule-name small {
+  color: var(--text-secondary);
+  display: block;
+  margin-top: 5px;
+  font-size: 0.65rem;
+}
+.rule-pattern {
+  display: block;
+  max-width: 260px;
+  overflow-wrap: anywhere;
+  color: #aec7e0;
+  font-size: 0.76rem;
+}
+#rules .table-scroll table {
+  min-width: 850px;
+}
+#rules .row-actions .Button {
+  font-size: 0.72rem;
+}

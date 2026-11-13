@@ -1,0 +1,21 @@
+.logo {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 9px;
+  width: fit-content;
+  color: var(--teal);
+}
+.logo-icon {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 36px;
+  color: var(--teal);
+  font-size: 1.8rem;
+}
+.logo-text {
+  font-size: 1.32rem;
+  letter-spacing: -0.04em;
+  font-weight: 750;
+}

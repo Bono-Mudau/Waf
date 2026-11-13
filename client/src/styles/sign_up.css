@@ -1,0 +1,121 @@
+.create_service_main-div {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  max-width: 1360px;
+  margin: auto;
+}
+.create_service-intro {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 65px;
+  position: relative;
+}
+.create_service-intro .logo {
+  margin-bottom: 70px;
+}
+.auth-intro-content {
+  margin-block: auto;
+  padding-bottom: 35px;
+}
+.auth-intro-content h1 {
+  font-size: clamp(2rem, 3.1vw, 3rem);
+  letter-spacing: -0.05em;
+  margin: 21px 0;
+  line-height: 1.2;
+}
+.auth-intro-content h1 span {
+  color: var(--teal);
+}
+.auth-intro-content > p {
+  color: var(--text-secondary);
+  max-width: 400px;
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+.auth-benefits {
+  padding: 0;
+  list-style: none;
+  margin: 34px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.auth-benefits li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.77rem;
+  color: #aab9ce;
+}
+.auth-benefits svg {
+  color: var(--teal);
+}
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  width: fit-content;
+  margin-top: 30px;
+}
+.auth-form-column {
+  background: #131b2e77;
+  border-left: 1px solid var(--border);
+  padding: 48px 48px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.auth-form-column .card {
+  width: 100%;
+  max-width: 440px;
+}
+.auth-footnote {
+  text-align: center;
+  font-size: 0.65rem;
+  color: #75859e;
+  margin: 25px 0 0;
+}
+@media (max-width: 1000px) {
+  .create_service-intro {
+    padding: 35px;
+  }
+  .auth-form-column {
+    padding: 40px 30px 25px;
+  }
+}
+@media (max-width: 900px) {
+  .create_service_main-div {
+    grid-template-columns: 1fr;
+  }
+  .create_service-intro {
+    padding: 25px;
+  }
+  .create_service-intro .logo {
+    margin-bottom: 32px;
+  }
+  .auth-intro-content {
+    padding-bottom: 0;
+  }
+  .auth-intro-content h1 {
+    font-size: 2.1rem;
+  }
+  .auth-intro-content > p {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  .auth-benefits {
+    display: none;
+  }
+  .back-link {
+    margin-top: 20px;
+  }
+  .auth-form-column {
+    border-left: 0;
+    border-top: 1px solid var(--border);
+    padding: 30px 25px;
+  }
+}

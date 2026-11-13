@@ -1,0 +1,50 @@
+{
+  "name": "sqlishield-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SQLiShield service API and Node.js WAF middleware",
+  "type": "module",
+  "main": "server.js",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "db:migrate": "node db/migrate.js",
+    "test": "node --test tests/unit.test.js",
+    "test:integration": "node --experimental-vm-modules --test --test-concurrency=1 tests/integration.test.js tests/migrations.test.js",
+    "test:app": "node testapp.js",
+    "test:socket": "node test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie": "^1.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^10.3.1",
+    "pg": "^8.23.1",
+    "socket.io": "^4.8.4"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.13",
+    "@electric-sql/pglite-socket": "^0.2.16",
+    "socket.io-client": "^4.8.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bono-Mudau/SQLiShield_Back_end.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bono-Mudau/SQLiShield_Back_end/issues"
+  },
+  "homepage": "https://github.com/Bono-Mudau/SQLiShield_Back_end#readme",
+  "author": "",
+  "keywords": []
+}

@@ -1,0 +1,41 @@
+@import './styles/global.css';
+
+:root {
+  --primary-bg: #0b1220;
+  --accent-bg: #131b2e;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-muted: #94a3b8;
+  --success: #16c784;
+  --danger: #f43f5e;
+  --warning: #fbbf24;
+  --info: #60c9fa;
+  --teal: #14b9b9;
+  --btn-primary: rgb(34, 0, 185);
+  --btn-primary-hover: rgb(65, 36, 194);
+  --card-bg: #fdfdfd0a;
+  --card-border: rgba(177, 84, 206, 0.2);
+  --border: rgba(148, 163, 184, 0.16);
+  --heading-size: 24px;
+  --sub-heading-size: 16px;
+  color-scheme: dark;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+  color: var(--text-primary);
+  background: var(--primary-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+#root {
+  min-height: 100vh;
+}

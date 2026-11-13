@@ -1,0 +1,95 @@
+.service-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 22px;
+}
+.service-details {
+  padding: 24px;
+  margin: 0;
+}
+.service-grid .panel-body > .Button {
+  margin-top: 15px;
+}
+.service-grid .panel-body > p:last-child {
+  margin: 15px 0 0;
+}
+.setup-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.service-setup .setup-list {
+  margin-top: 0;
+}
+.strictness-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 24px;
+  gap: 30px;
+}
+.strictness-grid > div {
+  border-left: 1px solid var(--border);
+  padding-left: 20px;
+}
+.strictness-grid strong {
+  font-size: 1.7rem;
+  display: block;
+  margin-top: 14px;
+  font-weight: 600;
+}
+.strictness-grid p {
+  color: var(--text-secondary);
+  font-size: 0.74rem;
+  margin: 9px 0 0;
+}
+@media (max-width: 1150px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+  .setup-columns {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+@media (max-width: 640px) {
+  .strictness-grid {
+    gap: 20px;
+    padding: 18px;
+  }
+  .strictness-grid > div {
+    padding-left: 10px;
+  }
+  .strictness-grid p {
+    font-size: 0.66rem;
+  }
+}
+.key-list {
+  margin-bottom: 18px;
+}
+.key-record {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.key-record code {
+  font-size: 0.75rem;
+  overflow-wrap: anywhere;
+}
+.key-record small {
+  display: block;
+  font-size: 0.65rem;
+  margin-top: 6px;
+}
+.new-key-box {
+  border: 1px solid #16c78440;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 18px;
+}
+.new-key-box .row-actions {
+  margin-top: 12px;
+  flex-wrap: wrap;
+}

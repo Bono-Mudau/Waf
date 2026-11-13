@@ -1,0 +1,33 @@
+.card > h2 {
+  font-size: 1.6rem;
+  letter-spacing: -0.04em;
+  margin-bottom: 11px;
+}
+.form-intro {
+  font-size: 0.81rem;
+  color: var(--text-secondary);
+  margin: 0 0 25px;
+  line-height: 1.8;
+}
+.card > .notice {
+  margin-bottom: 20px;
+}
+.auth-switch {
+  font-size: 0.78rem;
+  text-align: center;
+  color: var(--text-secondary);
+  margin: 23px 0 0;
+}
+.auth-switch a,
+.forgot-password {
+  color: #68d4d4;
+  font-weight: 500;
+}
+.auth-switch a:hover,
+.forgot-password:hover {
+  text-decoration: underline;
+}
+.forgot-password {
+  align-self: flex-end;
+  font-size: 0.75rem;
+}
