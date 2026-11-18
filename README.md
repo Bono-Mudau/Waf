@@ -1,6 +1,6 @@
 # SQLiShield
 
-The complete project is organised as requested:
+
 
 ```text
 WAF/
